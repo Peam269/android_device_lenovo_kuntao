@@ -53,6 +53,7 @@ on charger
     setprop sys.usb.config mass_storage
 
 on post-fs
+    setprop sys.usb.configfs 1
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
