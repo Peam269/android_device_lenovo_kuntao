@@ -139,3 +139,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# ADBonBoot
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=true
+    ro.secure=true
+    ro.debuggable=true
+    persist.service.debuggable=true
+    persist.service.adb.enable=true
+    persist.sys.usb.config=true
