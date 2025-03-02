@@ -74,20 +74,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8953 \
-    Snap
-
-PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.4:64 \
-    android.hardware.camera.device@3.5:64 \
-    android.hardware.camera.provider@2.4:64 \
-    android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5:64 \
-    vendor.qti.hardware.camera.device@1.0:64
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
