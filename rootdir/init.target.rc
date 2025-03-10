@@ -117,7 +117,9 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
 
 on charger
     setprop sys.usb.configfs 0
+    setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
+    setprop persist.sys.usb.config mass_storage
     start vendor.power_off_alarm
 
 service adsprpcd /vendor/bin/adsprpcd
