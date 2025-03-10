@@ -136,6 +136,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
 
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.sys.usb.config.extra=none
+
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
