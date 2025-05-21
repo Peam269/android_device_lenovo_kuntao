@@ -1,0 +1,6 @@
+#
+# system.prop for lenovo kuntao
+#
+
+# ConfigFS
+ro.boot.usbconfigfs=true
